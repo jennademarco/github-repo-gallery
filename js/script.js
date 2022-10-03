@@ -95,7 +95,7 @@ viewRepoButton.addEventListener("click", function () {
 
 filterInput.addEventListener("input", function (e) {
     const searchText = e.target.value;
-    const repos = document.querySelector(".repo");
+    const repos = document.querySelectorAll(".repo");
     const searchLowerText = searchText.toLowerCase();
 
     for (const repo of repos) {
